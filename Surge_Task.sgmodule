@@ -14,6 +14,14 @@ Bilibili银瓜子转硬币 = type=cron,cronexp=10 0 0 * * *,script-path=https://
 爱奇艺签到 = type=cron,cronexp=11 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 机场签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js
 机场签到Cookie版 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
-什么值得买_每日签到 =type=cron,timeout=120,cronexp=5 0 * * *, script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js
+什么值得买_每日签到 =type=cron,timeout=120,cronexp=16 0 * * *, script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js
+什么值得买_每日任务 =type=cron,timeout=120,cronexp=17 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js
 百度贴吧(客户端)=type=cron, cronexp=0 9 * * *, script-path=https://raw.githubusercontent.com/SuperLingyun/surge/main/JS/TieBa.js
 京东到家=type=cron, cronexp=0 9 * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
+JD清空购物车=type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/WSL33099/QuantumultX/main/Script/JD/ClCart.js
+JD删除优惠卷1=type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_deleteCoupon.js
+JD删除优惠卷2=type=cron, cronexp=0 9 * * *,script-path=https://ghproxy.com/https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_delCoupon.js
+JD取关商品=type=cron, cronexp=55 23 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_unsubscribe.js
+JD种豆得豆=type=cron, cronexp=1 7-21/2 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_plantBean.js
+JD抽奖机=type=cron, cronexp=11 1 * * * ,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
+JD京豆变动=type=cron, cronexp=2 9 * * * ,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_bean_change.js
