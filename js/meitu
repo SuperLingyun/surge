@@ -1,0 +1,6 @@
+[MITM]
+hostname=api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
+
+[Script]
+# 美图秀秀解锁VIP api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
+美图秀秀解锁VIP = type=http-response,pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiaoben/MeiTuXiuXiu.js,script-update-interval=0,max-size=0
