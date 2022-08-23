@@ -1,3 +1,6 @@
+#!name=自用相机解锁VIP
+#!desc=美图秀秀/轻颜解锁VIP
+
 [MITM]
 hostname=api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi
 
