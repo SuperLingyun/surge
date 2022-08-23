@@ -1,6 +1,5 @@
 #!name=获取Cookie
-#!desc=获取Cookie脚本合集  @w37fhy+@blackmatrix7
-
+#!desc=获取Cookie脚本合集
 
 [MITM]
 hostname =  %APPEND% zhiyou.smzdm.com,api.m.jd.com, www.52pojie.cn, draw.jdfcloud.com, ms.jr.id.com, i.meituan.com, *.bilibili.com, music.163.com, act.10010.com, m.client.10010.com, iface?.iqiyi.com, nebula.kuaishou.com, trade-acs.m.taobao.com, mp.weixin.qq.com, ms.jr.jd.com, wapside.189.cn, wx.10086.cn, %APPEND% apph5.manmanbuy.com,c.tieba.baidu.com,fmapp.chinafamilymart.com.cn,h5.ele.me,luka-graphql.ling.cn,maicai.api.ddxq.mobi,mall.meituan.com,mp.jzb.com,pgc-cms.jzb.com,*.video.qq.com, v.qq.com
