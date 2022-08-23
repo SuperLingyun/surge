@@ -19,13 +19,9 @@ NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update
 #flushDNS = script-name=flushDNS, title="Flush DNS", content="请刷新", update-interval=600
 
 #Netflix策略组自动控制
-#NetflixSelect = script-name=NetflixSelect, update-interval=3600
+NetflixSelect = script-name=NetflixSelect, update-interval=3600
 
-#流媒体解锁
-流媒体解锁 = script-name=流媒体解锁, title="流媒体解锁", content="请刷新面板", update-interval=-1
 
-#新冠疫情查询
-covid19 = script-name=covid19, title="新冠疫情查询", content="请刷新", update-interval=3600
 
 #PROXY策略组面板 
 groupPanel= script-name=groupPanel,update-interval=5
