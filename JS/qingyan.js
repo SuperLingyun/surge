@@ -8,7 +8,7 @@
  *[MITM]
  *hostname:commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi
  *[Script]
- *轻颜相机VIP= type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+ *轻颜相机VIP= type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,script-path=https://raw.githubusercontent.com/SuperLingyun/surge/main/JS/qingyan.js
 
 [MITM]
 hostname =commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi
