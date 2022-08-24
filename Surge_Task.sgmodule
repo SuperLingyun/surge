@@ -3,12 +3,12 @@
 # By Evilbutcher GitHub：https://github.com/evilbutcher/Quantumult_X/tree/master
 
 [MITM]
-hostname = %APPEND% zhiyou.smzdm.com,trade-acs.m.taobao.com, api.m.jd.com, *.bilibili.com, music.163.com, act.10010.com, m.client.10010.com, wapside.189.cn:9001, ifac*.iqiyi.com, nebula.kuaishou.com, mp.weixin.qq.com, ms.jr.jd.com,c.tieba.baidu.com
+hostname = %APPEND% tiebac.baidu.com，%APPEND% zhiyou.smzdm.com,trade-acs.m.taobao.com, api.m.jd.com, *.bilibili.com, music.163.com, act.10010.com, m.client.10010.com, wapside.189.cn:9001, ifac*.iqiyi.com, nebula.kuaishou.com, mp.weixin.qq.com, ms.jr.jd.com,c.tieba.baidu.com
 [Script]
 京东多合一签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 什么值得买_每日签到 =type=cron,timeout=120,cronexp=16 0 * * *, script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js
 什么值得买_每日任务 =type=cron,timeout=120,cronexp=17 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js
-百度贴吧(客户端)=type=cron, cronexp=0 9 * * *, script-path=https://raw.githubusercontent.com/SuperLingyun/surge/main/JS/TieBa.js
+贴吧_每日签到 = type=cron,cronexp=30 0 * * *,timeout=60,script-path=https://raw.githubusercontent.com/Voldeemort/Surge/main/module/tieba/tiebacheck.js
 京东到家=type=cron, cronexp=0 9 * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
 JD清空购物车=type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/WSL33099/QuantumultX/main/Script/JD/ClCart.js
 JD删除优惠卷1=type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_deleteCoupon.js
