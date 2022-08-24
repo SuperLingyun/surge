@@ -156,6 +156,16 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 
 
 [URL Rewrite]
+# > kEEP 去广告
+
+^https?:\/\/api\.gotokeep\.com\/ads-reject
+^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad/-eject
+^https?:\/\/api\.gotokeep\.com\/ads-reject
+^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad-reject
+^https?:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}-reject-img
+^https?:\/\/api\.gotokeep\.com\/ads\/-reject
+https://api.gotokeep.com/op-engine-webapp/v1/ad-reject
+https://api.gotokeep.com/ads/v1/ads/preload-reject
 
 # > 抖音 去广告&水印
 ^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/feed\/ https://aweme.snssdk.com/aweme/v1/feed/ header
