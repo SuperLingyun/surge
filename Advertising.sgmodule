@@ -99,6 +99,56 @@ DOMAIN,tuiguang.meitu.com,REJECT
 DOMAIN,xiuxiu.android.dl.meitu.com,REJECT
 DOMAIN,xiuxiu.mobile.meitudata.com,REJECT
 
+# > keep 去广告
+DOMAIN,	adskeeper.co.uk	,REJECT
+DOMAIN,	pkeeper3.ru	,REJECT
+DOMAIN,	static.mackeeper.com	,REJECT
+DOMAIN,	download.mackeeper.com	,REJECT
+DOMAIN,	event.mackeeper.com	,REJECT
+DOMAIN,	jsc.adskeeper.co.uk	,REJECT
+DOMAIN,	keepaira.net	,REJECT
+DOMAIN,	keepinfit.net	,REJECT
+DOMAIN,	mackeeperapp.mackeeper.com	,REJECT
+DOMAIN,	servicer.adskeeper.co.uk	,REJECT
+DOMAIN,	adskeeper.co.uk	,REJECT
+DOMAIN,	adskeeper.com	,REJECT
+DOMAIN,	getmackeepersoftpro.xyz	,REJECT
+DOMAIN,	housekeeperjavelin.com	,REJECT
+DOMAIN,	ideahealkeeper.com	,REJECT
+DOMAIN,	keepass.com	,REJECT
+DOMAIN,	keepass.fr	,REJECT
+DOMAIN,	keeptaza.com	,REJECT
+DOMAIN,	keepyoungphone.bid	,REJECT
+DOMAIN,	kmpiframe.keepmeposted.com.mt	,REJECT
+DOMAIN,	mackeeperapp1.zeobit.com	,REJECT
+DOMAIN,	mirishkeeps.com	,REJECT
+DOMAIN,	resetoccultkeeper.com	,REJECT
+DOMAIN,	shopkeep.fr	,REJECT
+DOMAIN,	transferkeep.com	,REJECT
+DOMAIN,	vgs-collect-keeper.apps.veeygood.systems	,REJECT
+DOMAIN,	mackeeper.com	,REJECT
+DOMAIN,	secure.keepobury.com	,REJECT
+DOMAIN,	sp.poughkeepsiejournal.com	,REJECT
+DOMAIN,	tracking.seakeeper.com	,REJECT
+DOMAIN,	keepcdn.com	,REJECT
+DOMAIN,	keepfrds.com	,REJECT
+DOMAIN,	keephide.com	,REJECT
+DOMAIN,	fileskeep.com	,REJECT
+DOMAIN,	keepvacom.com	,REJECT
+DOMAIN,	keepskins.com	,REJECT
+DOMAIN,	keeporhard.com	,REJECT
+DOMAIN,	clipskeeper.com	,REJECT
+DOMAIN,	warezkeeper.com	,REJECT
+DOMAIN,	powerkeepers.net	,REJECT
+DOMAIN,	keepcolletive.com	,REJECT
+DOMAIN,	akeeperoftime.com	,REJECT
+DOMAIN,	px.keepmypixel.com	,REJECT
+DOMAIN,	gatekeeper.amobee.com	,REJECT
+DOMAIN,	mackeeperapp.zeobit.com	,REJECT
+DOMAIN,	bookkeeperbaltimore.com	,REJECT
+DOMAIN,	keepingbusinesslocal.com	,REJECT
+DOMAIN,	mackeeperapp3.mackeeper.com	,REJECT
+DOMAIN,	mackeeperapp2.mackeeper.com	,REJECT
 
 
 
