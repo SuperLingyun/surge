@@ -100,7 +100,10 @@ DOMAIN,xiuxiu.android.dl.meitu.com,REJECT
 DOMAIN,xiuxiu.mobile.meitudata.com,REJECT
 
 # > keep 去广告
-DOMAIN,adskeeper.co.uk	,REJECT
+DOMAIN,conf.hpplay.cn,REJECT
+DOMAIN-SUFFIX,bugsnag.com,REJECT
+
+DOMAIN,adskeeper.co.uk,REJECT
 DOMAIN,pkeeper3.ru,REJECT
 DOMAIN,static.mackeeper.com,REJECT
 DOMAIN,download.mackeeper.com,REJECT
