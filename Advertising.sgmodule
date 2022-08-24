@@ -2,6 +2,10 @@
 #!desc=一些个人常用软件去广告
 
 [Rule]
+# 常见广告关键字-拦截
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list,,REJECT
+# 常用应用内去广告-拦截
+RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list,REJECT
 
 # > 京东  去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
@@ -31,6 +35,38 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/pay/ok$ ,REJECT-TINYGIF
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ver/index_ios$,REJECT
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index,REJECT-TINYGIF
+
+# > 美图秀秀 去广告
+DOMAIN,api.data.meitu.com,REJECT
+DOMAIN,push.meitu.com,REJECT
+DOMAIN,stat.meitudata.com,REJECT
+DOMAIN,adui.tg.meitu.com,REJECT
+DOMAIN,rabbit.meitustat.com,REJECT
+DOMAIN,rabbit.tg.meitu.com,REJECT
+DOMAIN,app-measurement.com,REJECT
+DOMAIN,meepo.meitustat.com,REJECT
+DOMAIN,gondar.meitustat.com,REJECT
+DOMAIN,dig.bdurl.net,REJECT
+DOMAIN,ios.bugly.qq.con,REJECT
+DOMAIN,opencloud.wostore.cn,REJECT
+DOMAIN,adshxgc.ut.taobao.com,REJECT
+DOMAIN,firebaselogging-pa.goolespis.com,REJECT
+DOMAIN,my-material.zone1.meitudata.com,REJECT
+DOMAIN,wodemeitu.com,REJECT
+DOMAIN,corp.meitu.com,REJECT
+DOMAIN,dc.meitustat.com,REJECT
+DOMAIN,gg.meitu.com,REJECT
+DOMAIN,jssd.uumeitu.com,REJECT
+DOMAIN,mdc.meitustat.com,REJECT
+DOMAIN,meitubeatuty.meitustat.com,REJECT
+DOMAIN,meitumq.com,REJECT
+DOMAIN,message.meitu.com,REJECT
+DOMAIN,tuiguang.meitu.com,REJECT
+DOMAIN,xiuxiu.android.dl.meitu.com,REJECT
+DOMAIN,xiuxiu.mobile.meitudata.com,REJECT
+
+
+
 
 [URL Rewrite]
 
