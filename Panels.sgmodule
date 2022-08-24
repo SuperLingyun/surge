@@ -12,17 +12,9 @@ TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 #网络详情
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 
-#流量统计
-#TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 
-#刷新DNS
-#flushDNS = script-name=flushDNS, title="Flush DNS", content="请刷新", update-interval=600
 
-#PROXY策略组面板 
-groupPanel= script-name=groupPanel,update-interval=5
 
-#AUTO策略组面板
-groupPanel= script-name=groupPanel1,update-interval=5
 
 
 
@@ -37,20 +29,6 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 
 #网络详情
 net-info-panel.js=type=generic,timeout=10,script-path=https://raw.githubusercontent.com/i-liulang/Surge/main/networkCheck.js
-
-#流量统计 点击以切换网络界面
-#TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8 
-
-#刷新DNS
-#flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=repeat.circle.fill&color=#FF9F0A
-
-
-#PROXY策略组面板 
-#必须更改的字段：group 填写需要显示的策略组名称
-groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=Proxy
-
-#AUTO策略组面板
-groupPanel1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=arrow.triangle.2.circlepath.circle&color=#86abee&group=HK
 
 
 
