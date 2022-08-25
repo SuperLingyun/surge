@@ -17,5 +17,3 @@ JD取关商品=type=cron, cronexp=55 23 * * *,script-path=https://raw.githubuser
 JD种豆得豆=type=cron, cronexp=1 7-21/2 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_plantBean.js
 JD抽奖机=type=cron, cronexp=11 1 * * * ,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
 JD京豆变动=type=cron, cronexp=2 9 * * * ,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_bean_change.js
-# mw418  https://github.com/mw418/QuantumultX
-每日一图=type=cron, cronexp=5 8 * * *,script-path=https://raw.githubusercontent.com/mw418/QuantumultX/master/setu.js
