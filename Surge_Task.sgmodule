@@ -8,7 +8,7 @@ hostname = %APPEND% tiebac.baidu.com，%APPEND% zhiyou.smzdm.com,daojia.jd.com, 
 欧可林签到 =type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean_mini.js
 京东多合一签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 什么值得买_每日签到 =type=cron,timeout=120,cronexp=16 0 * * *, script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js
-什么值得买_每日任务 =type=cron,timeout=120,cronexp=17 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js
+什么值得买_每日任务 =type=cron,timeout=120,cronexp=17 0 * * * ,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js
 贴吧_每日签到 = type=cron,cronexp=30 0 * * *,timeout=60,script-path=https://raw.githubusercontent.com/Voldeemort/Surge/main/module/tieba/tiebacheck.js
 京东到家=type=cron, cronexp=0 9 * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
 JD清空购物车=type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/WSL33099/QuantumultX/main/Script/JD/ClCart.js
