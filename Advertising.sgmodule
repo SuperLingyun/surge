@@ -69,7 +69,22 @@ DOMAIN,rabbit.tg.meitu.com,REJECT
 DOMAIN,app-measurement.com,REJECT
 DOMAIN,meepo.meitustat.com,REJECT
 DOMAIN,gondar.meitustat.com,REJECT
-
+DOMAIN,dig.bdurl.net,REJECT
+DOMAIN,ios.bugly.qq.con,REJECT
+DOMAIN,opencloud.wostore.cn,REJECT
+DOMAIN,adshxgc.ut.taobao.com,REJECT
+DOMAIN,firebaselogging-pa.goolespis.com,REJECT
+DOMAIN,my-material.zone1.meitudata.com,REJECT
+DOMAIN,wodemeitu.com,REJECT
+DOMAIN,corp.meitu.com,REJECT
+DOMAIN,dc.meitustat.com,REJECT
+DOMAIN,gg.meitu.com,REJECT
+DOMAIN,jssd.uumeitu.com,REJECT
+DOMAIN,mdc.meitustat.com,REJECT
+DOMAIN,meitubeatuty.meitustat.com,REJECT
+DOMAIN,meitumq.com,REJECT
+DOMAIN,message.meitu.com,REJECT
+DOMAIN,tuiguang.meitu.com,REJECT
 DOMAIN,xiuxiu.android.dl.meitu.com,REJECT
 DOMAIN,xiuxiu.mobile.meitudata.com,REJECT
 
