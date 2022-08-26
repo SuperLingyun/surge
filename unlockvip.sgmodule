@@ -2,7 +2,7 @@
 #!desc=美图秀秀/轻颜解锁VIP
 
 [MITM]
-hostname=api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi
+hostname=%APPEND% api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi
 
 [Script]
 # 美图秀秀解锁VIP api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
