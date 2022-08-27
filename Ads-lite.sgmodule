@@ -107,4 +107,4 @@ https://api.gotokeep.com/op-engine-webapp/v1/ad-reject
 https://api.gotokeep.com/ads/v1/ads/preload-reject
 
 [MITM]
-hostname=%APPEND% * api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com
+hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com
