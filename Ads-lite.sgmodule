@@ -87,14 +87,14 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 
 
 
-[URL Rewrite]
 
+[Script]
 # >联通轮播去广告
 联通轮播去广告=type=http-response,pattern= ^https?://m.client.10010.com/uniAdmsInterface/getHomePageAd, script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/china_unicom.js
 
 # > 酷安去广告
 酷安去广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/coolapk.js,script-update-interval=0
-
+[URL Rewrite]
 # > kEEP 去广告
 ^https?:\/\/api\.gotokeep\.com\/ads-reject
 ^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad/-eject
