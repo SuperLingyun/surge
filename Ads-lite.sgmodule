@@ -95,6 +95,11 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 # > 酷安去广告
 酷安去广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/coolapk.js,script-update-interval=0
 
+# > 京东搜索优化
+搜索优化1 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/jd_json.js,script-update-interval=0
+搜索优化2 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/jd_json.js,script-update-interval=0
+
+
 [URL Rewrite]
 # > kEEP 去广告
 ^https?:\/\/api\.gotokeep\.com\/ads-reject
@@ -107,4 +112,4 @@ https://api.gotokeep.com/op-engine-webapp/v1/ad-reject
 https://api.gotokeep.com/ads/v1/ads/preload-reject
 
 [MITM]
-hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com
+hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com
