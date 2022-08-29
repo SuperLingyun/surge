@@ -99,6 +99,9 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 搜索优化1 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/jd_json.js,script-update-interval=0
 搜索优化2 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/jd_json.js,script-update-interval=0
 
+# 微信公众号广告屏蔽(By Choler)
+微信公众号广告屏蔽=type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
+
 
 [URL Rewrite]
 # > kEEP 去广告
@@ -112,4 +115,4 @@ https://api.gotokeep.com/op-engine-webapp/v1/ad-reject
 https://api.gotokeep.com/ads/v1/ads/preload-reject
 
 [MITM]
-hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com
+hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com,mp.weixin.qq.com
