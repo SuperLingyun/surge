@@ -102,6 +102,9 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 # 微信公众号广告屏蔽(By Choler)
 微信公众号广告屏蔽=type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
+# Remove WeChat Ads
+WeChat Ads=type=http-request, pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,requires-body=1,script-path=https://raw.githubusercontent.com/Peng-Lx/lxpscript/master/surge/Script/wechat.js
+
 
 [URL Rewrite]
 # > kEEP 去广告
