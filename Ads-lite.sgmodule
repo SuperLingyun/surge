@@ -117,5 +117,8 @@ WeChat Ads=type=http-request, pattern=^https://mp\.weixin\.qq\.com/mp/getappmsga
 "^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/"-reject
 "^https?:\/\/m5\.amap\.com\/ws\/valueadded\/"-reject
 
+# > 美图秀秀
+"^https?:\/\/mea\.meitudata\.com\/kaiping"-reject
+
 [MITM]
 hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com,mp.weixin.qq.com,amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com
