@@ -34,7 +34,6 @@ DOMAIN,xiuxiu.mobile.meitudata.com,REJECT
 # > keep 去广告
 DOMAIN-SUFFIX,hpplay.cn,REJECT
 DOMAIN-SUFFIX,bugsnag.com,REJECT
-
 DOMAIN,adskeeper.co.uk,REJECT
 DOMAIN,pkeeper3.ru,REJECT
 DOMAIN,static.mackeeper.com,REJECT
@@ -108,23 +107,15 @@ WeChat Ads=type=http-request, pattern=^https://mp\.weixin\.qq\.com/mp/getappmsga
 
 [URL Rewrite]
 # > kEEP 去广告
-^https?:\/\/api\.gotokeep\.com\/ads-reject
-^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad/-reject
-^https?:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}-reject
-^https?:\/\/api\.gotokeep\.com\/ads\/-reject
-https://api.gotokeep.com/op-engine-webapp/v1/ad-reject
-https://api.gotokeep.com/ads/v1/ads/preload-reject
+"^https?:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}"-reject
+"^https?:\/\/api\.gotokeep\.com\/ads\/"-reject
+"https://api.gotokeep.com/op-engine-webapp/v1/ad"-reject
+"https://api.gotokeep.com/ads/v1/ads/preload"-reject
 
-# > AMap - amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com
-^https?://amap\-aos\-info\-nogw\.amap\.com/ws/aos/alimama/-REJECT
-^https?://m\d\.amap\.com/ws/message/notice/list?-REJECT
-^https?://m\d\.amap\.com/ws/valueadded/alimama/splash_screen?-REJECT
-^https?://optimus-ads\.amap\.com/uploadimg/-REJECT
-^https?://render-oss-cdn\.amap\.com/render/studio-dev/image/-REJECT
-^https?://sns\.amap\.com/ws/msgbox/pull?-REJECT
+# > 高德地图 - amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com
+"^https?://optimus-ads\.amap\.com/uploadimg/"-REJECT
+"^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/"-reject
+"^https?:\/\/m5\.amap\.com\/ws\/valueadded\/"-reject
 
-^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/-reject
-^https?:\/\/m5\.amap\.com\/ws\/valueadded\/-reject
-^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/-reject
 [MITM]
 hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com,mp.weixin.qq.com,amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com
