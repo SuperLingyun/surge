@@ -110,8 +110,6 @@ WeChat Ads=type=http-request, pattern=^https://mp\.weixin\.qq\.com/mp/getappmsga
 # > kEEP 去广告
 ^https?:\/\/api\.gotokeep\.com\/ads-reject
 ^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad/-reject
-^https?:\/\/api\.gotokeep\.com\/ads-reject
-^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad-reject
 ^https?:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}-reject
 ^https?:\/\/api\.gotokeep\.com\/ads\/-reject
 https://api.gotokeep.com/op-engine-webapp/v1/ad-reject
@@ -124,5 +122,9 @@ https://api.gotokeep.com/ads/v1/ads/preload-reject
 ^https?://optimus-ads\.amap\.com/uploadimg/-REJECT
 ^https?://render-oss-cdn\.amap\.com/render/studio-dev/image/-REJECT
 ^https?://sns\.amap\.com/ws/msgbox/pull?-REJECT
+
+^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/-reject
+^https?:\/\/m5\.amap\.com\/ws\/valueadded\/-reject
+^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/-reject
 [MITM]
 hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com,mp.weixin.qq.com,amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com
