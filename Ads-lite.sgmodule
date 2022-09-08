@@ -131,4 +131,4 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 
 
 [MITM]
-hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com,mp.weixin.qq.com,amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com
+hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com,mp.weixin.qq.com,amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com,magev6.if.qidian.com, mage.if.qidian.com, qidian.qpic.cn
