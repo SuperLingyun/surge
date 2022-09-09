@@ -127,18 +127,13 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 "^https://magev6.if.qidian.com/argus/api/v4/client/getsplashscreen?" - reject
 
 # > 腾讯广告
-"^https?:\/\/btrace\.qq\.com" - reject
 "^https?:\/\/api2\.helper\.qq\.com\/game\/buttons"  - REJECT-TINYGIF
 "^https?:\/\/\w+\.beacon\.qq\.com"  - reject
-"^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg" - reject
 "^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom="  - REJECT-TINYGIF
 "^https?:\/\/imgcache\.qq\.com\/qqlive\/"  - REJECT-TINYGIF
 "^https?:\/\/mtteve\.beacon\.qq\.com\/analytics" - REJECT-TINYGIF
 "^https?+:\/\/vv\.video\.qq\.com\/getvmind\?" - reject
-"^https?+:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons" - reject
 "^https?+:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info" - reject
-"^https?+:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/" - reject
-"^https?+:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/" - reject
 "^https?:\/\/.+?\.l\.qq\.com" - reject
 "^https?:\/\/\w+\.gdt\.qq\.com" - reject
 "^https?:\/\/y\.gtimg\.cn\/music\/.*?_Ad/\d+\.png" - REJECT-TINYGIF
