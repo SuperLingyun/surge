@@ -144,6 +144,8 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 "^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/"  - REJECT-TINYGIF
 "^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4}" - REJECT-TINYGIF
 
+# > 工银E生活
+"^https?:\/\/image2\.elife\.icbc\.com\.cn\/filepath\/elife\/2022\/*\/*\/*\/.*.jpg"- reject
 
 [MITM]
 hostname=%APPEND% api.coolapk.com,api.gotokeep.com,api.keepkeep.com,api-intl.mr.meitu.com,m.client.10010.com,api.m.jd.com,mp.weixin.qq.com,amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com,magev6.if.qidian.com, mage.if.qidian.com, qidian.qpic.cn
