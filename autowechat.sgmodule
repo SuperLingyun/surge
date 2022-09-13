@@ -8,6 +8,8 @@
 🚩 建议积分每天兑换，并清空，不要积累
 🍄 如需引用请注明出处，谢谢合作！
 */
+#!name=微信自动预约
+#!desc=https://shrtm.nu/6vL4，https://shrtm.nu/k8Pp
 [Script]
 微信自动阅读（羊毛） = type=http-response,pattern=^https?://mp\.weixin\.qq\.com/s\?.*,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/wechat_auto_read.js, requires-body=true
 *************************
