@@ -13,4 +13,4 @@
 *************************
 
 [mitm]
-hostname = mp.weixin.qq.com
+hostname =%APPEND%  mp.weixin.qq.com
