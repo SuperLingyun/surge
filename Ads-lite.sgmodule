@@ -144,6 +144,9 @@ DOMAIN,mackeeperapp2.mackeeper.com,REJECT
 "^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/"  - REJECT-TINYGIF
 "^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4}" - REJECT-TINYGIF
 
+# > 酷安去广告
+"^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk" - reject
+
 # > 工银E生活
 "^https?:\/\/image2\.elife\.icbc\.com\.cn\/filepath\/elife\/2022\/*\/*\/*\/.*.jpg"- reject
 
