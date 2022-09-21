@@ -1,7 +1,7 @@
 #!name=微信自动预约
 #!desc=https://shrtm.nu/6vL4，https://shrtm.nu/k8Pp
 [Script]
-微信自动阅读（羊毛） = type=http-response,pattern=^https?://mp\.weixin\.qq\.com/s\?.*,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Script/wechat_auto_read.js, requires-body=true
+微信自动阅读（羊毛） = type=http-response,pattern=^https?://mp\.weixin\.qq\.com/s\?.*,script-path=https://raw.githubusercontent.com/SuperLingyun/surge/main/JS/wechat_auto_read.js, requires-body=true
 *************************
 
 [mitm]
