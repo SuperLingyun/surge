@@ -1,15 +1,6 @@
 #!name=定时任务
 #!desc=签到等定时任务  
 # By Evilbutcher GitHub：https://github.com/evilbutcher/Quantumult_X/tree/master
-/*
-#京东多合一签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-#京喜牧场 = type=cron,cronexp="20 0-23/3 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_jxmc.js
-#JD种豆得豆=type=cron, cronexp=1 7-21/2 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_plantBean.js
-#JD抽奖机=type=cron, cronexp=11 1 * * * ,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
-
-
-*/
-
 
 [MITM]
 hostname = %APPEND% tiebac.baidu.com,zhiyou.smzdm.com,daojia.jd.com, api.m.jd.com, ms.jr.jd.com,c.tieba.baidu.com
