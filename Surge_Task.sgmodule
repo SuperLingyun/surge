@@ -13,7 +13,7 @@ JD清空购物车=type=cron, cronexp=0 9 * * *,script-path=https://raw.githubuse
 JD删除优惠卷1=type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_deleteCoupon.js
 JD删除优惠卷2=type=cron, cronexp=0 9 * * *,script-path=https://ghproxy.com/https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_delCoupon.js
 JD取关店铺商品=type=cron, cronexp=55 23 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_unsubscribe.js
-$JD种豆得豆=type=cron, cronexp=1 7-21/2 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_plantBean.js
+#JD种豆得豆=type=cron, cronexp=1 7-21/2 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_plantBean.js
 #JD抽奖机=type=cron, cronexp=11 1 * * * ,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
 JD京豆变动=type=cron, cronexp=2 9 * * * ,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_bean_change.js
 #京喜牧场 = type=cron,cronexp="20 0-23/3 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_jxmc.js
