@@ -1,18 +1,18 @@
 #!name=定时任务
 #!desc=签到等定时任务  
-# By Evilbutcher GitHub：https://github.com/evilbutcher/Quantumult_X/tree/master
+# By Evilbutcher GitHub：https://github.com/evilbutcher/Quantumult_X/tree/master zhiyou.smzdm.com,daojia.jd.com, api.m.jd.com, ms.jr.jd.com,
 
 
 
 [Script]
 欧可林签到 =type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean_mini.js
 贴吧_每日签到 = type=cron,cronexp=30 0 * * *,timeout=60,script-path=https://raw.githubusercontent.com/Voldeemort/Surge/main/module/tieba/tiebacheck.js
-京东到家=type =cron, cronexp=0 9 * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
-JD清空购物车 =type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/WSL33099/QuantumultX/main/Script/JD/ClCart.js
-JD删除优惠卷1 =type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_deleteCoupon.js
-JD删除优惠卷2 =type=cron, cronexp=0 9 * * *,script-path=https://ghproxy.com/https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_delCoupon.js
-JD取关店铺商品 =type=cron, cronexp=55 23 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_unsubscribe.js
-JD京豆变动 =type=cron, cronexp=2 9 * * * ,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_bean_change.js
+##京东到家=type =cron, cronexp=0 9 * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
+##JD清空购物车 =type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/WSL33099/QuantumultX/main/Script/JD/ClCart.js
+##JD删除优惠卷1 =type=cron, cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_deleteCoupon.js
+##JD删除优惠卷2 =type=cron, cronexp=0 9 * * *,script-path=https://ghproxy.com/https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_delCoupon.js
+##JD取关店铺商品 =type=cron, cronexp=55 23 * * *,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_unsubscribe.js
+##JD京豆变动 =type=cron, cronexp=2 9 * * * ,script-path=https://raw.githubusercontent.com/ChuheGit/1/main/Script/jd_scripts/jd_bean_change.js
 
 [MITM]
-hostname = %APPEND% tiebac.baidu.com,zhiyou.smzdm.com,daojia.jd.com, api.m.jd.com, ms.jr.jd.com,c.tieba.baidu.com
+hostname = %APPEND% tiebac.baidu.com,c.tieba.baidu.com
