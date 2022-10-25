@@ -30,9 +30,8 @@ DOMAIN,message.meitu.com,REJECT
 DOMAIN,tuiguang.meitu.com,REJECT
 DOMAIN,xiuxiu.android.dl.meitu.com,REJECT
 DOMAIN,xiuxiu.mobile.meitudata.com,REJECT
-
-# > keep 去广告
-
+host,kad.gotokeep.com,reject
+host,apm.gotokeep.com,reject
 
 
 [Script]
