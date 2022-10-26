@@ -55,8 +55,13 @@ host,apm.gotokeep.com,reject
 "https://api.gotokeep.com/op-engine-webapp/v1/ad" - reject
 "https://api.gotokeep.com/ads/v1/ads/preload" - reject
 
-# > 高德地图 
-"^https?://optimus-ads\.amap\.com/uploadimg/" - REJECT
+# > AMap 高德地图 - amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com
+^https?://amap\-aos\-info\-nogw\.amap\.com/ws/aos/alimama/ - REJECT-TINYGIF
+^https?://m\d\.amap\.com/ws/message/notice/list? - REJECT-TINYGIF
+^https?://m\d\.amap\.com/ws/valueadded/alimama/splash_screen? - REJECT-TINYGIF
+^https?://optimus-ads\.amap\.com/uploadimg/ - REJECT-TINYGIF
+^https?://render-oss-cdn\.amap\.com/render/studio-dev/image/ - REJECT-TINYGIF
+^https?://sns\.amap\.com/ws/msgbox/pull? - REJECT-TINYGIF
 "^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/" - reject
 "^https?:\/\/m5\.amap\.com\/ws\/valueadded\/" - reject
 
