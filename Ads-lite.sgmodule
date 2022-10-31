@@ -1,5 +1,5 @@
 #!name=去广告
-#!desc=美图，Keep，酷安去广告
+#!desc=美图，Keep
 
 [Rule]
 # > 美图秀秀 去广告
@@ -39,8 +39,7 @@ DOMAIN,apm.gotokeep.com,reject
 # >联通轮播去广告
 联通轮播去广告=type=http-response,pattern= ^https?://m.client.10010.com/uniAdmsInterface/getHomePageAd, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/china_unicom.js
 
-# > 酷安去广告
-酷安去广告 = type=http-response,pattern=^https?:\/\/api.coolapk.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/SuperLingyun/surge/main/JS/coolapk.js,script-update-interval=0
+
 
 # > 京东搜索优化
 搜索优化1 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/jd_json.js,script-update-interval=0
@@ -119,8 +118,7 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 "^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/"  - REJECT-TINYGIF
 "^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4}" - REJECT-TINYGIF
 
-# > 酷安去广告
-"^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk" - reject
+
 
 # > 工银E生活
 "^https?:\/\/image2\.elife\.icbc\.com\.cn\/filepath\/elife\/2022\/*\/*\/*\/.*.jpg"- reject
