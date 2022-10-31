@@ -84,8 +84,8 @@ Keep2=type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/config\/v\d\/ba
 # > 滴滴
 "^https?:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/.*.jpg" - reject
 # > 滴滴出行（推荐英文版）@ddgksf2013
-https?://res\.xiaojukeji\.com\/resapi\/activity\/mget url reject-dict
-https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) url reject
+https?://res\.xiaojukeji\.com\/resapi\/activity\/mget - reject-dict
+https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) - reject
 # > 饿了么
 ^https?:\/\/elemecdn.com\/.+\/sitemap url reject
 ^https?:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} url reject
