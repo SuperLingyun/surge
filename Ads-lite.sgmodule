@@ -49,12 +49,25 @@ DOMAIN,apm.gotokeep.com,reject
 # 微信公众号广告屏蔽(By Choler)
 微信公众号广告屏蔽=type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
+# > Keep
+Keep1=type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my,requires-body=1,script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/keepStyle.js
+Keep2=type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic,requires-body=1,script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/keepStyle.js
+
 [URL Rewrite]
 # > kEEP 去广告
 "^https?:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}" - reject
 "^https?:\/\/api\.gotokeep\.com\/ads\/" - reject
 "https://api.gotokeep.com/op-engine-webapp/v1/ad" - reject
 "https://api.gotokeep.com/ads/v1/ads/preload" - reject
+# > Keep开屏广告及热搜屏蔽@ddgksf2013
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list - reject
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list - reject
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list - reject
+^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad - reject
+^https?:\/\/api\.gotokeep\.com\/ads\/v\d\/ads\/preload - reject
+^https?:\/\/api\.gotokeep\.com\/training\/box\/config - reject
+^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check - reject
+
 
 # > AMap 高德地图 - amap-aos-info-nogw.amap.com,m*.amap.com,optimus-ads.amap.com,render-oss-cdn.amap.com,sns.amap.com
 ^https?://amap\-aos\-info\-nogw\.amap\.com/ws/aos/alimama/ - REJECT-TINYGIF
@@ -74,6 +87,12 @@ DOMAIN,apm.gotokeep.com,reject
 # > 滴滴出行（推荐英文版）@ddgksf2013
 https?://res\.xiaojukeji\.com\/resapi\/activity\/mget url reject-dict
 https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) url reject
+# > 饿了么
+^https?:\/\/elemecdn.com\/.+\/sitemap url reject
+^https?:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} url reject
+^https?:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} url reject
+^https?:\/\/fuss10.elemecdn.com\/.+.mp4 url reject
+^https?:\/\/www1.elecfans.com\/www\/delivery\/ url reject
 
 # > 起点读书
 "^https?:\/\/qidian\.qpic\.cn\/qidian_common" - REJECT-TINYGIF
