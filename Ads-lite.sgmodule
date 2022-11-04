@@ -2,6 +2,30 @@
 #!desc=美图，Keep
 
 [Rule]
+# > 京东极速版 去广告
+URL-REGEX,https://api.m.jd.com/client.action\?functionId=lite_advertising,REJECT
+# > 滴滴出行 去广告
+//01 安全提示横幅
+URL-REGEX,^https:\/\/guard\.sec\.xiaojukeji\.com\/api\/guard\/psg\/v2\/getShieldStatus,REJECT
+//02 底部打车&代价推荐
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/one,REJECT
+//03 福利专区-金融服务-公交-骑车-滴滴乐园
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/nav\/widget,REJECT
+//04 接送机-优惠商城
+URL-REGEX,^https:\/\/api\.udache\.com\/gulfstream,REJECT
+//05 主页 领任务
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/api\/(component|fusion|dynamicmodule|usercenter),REJECT
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/dynamic,REJECT
+//06 主页 非主流式悬浮挂件
+URL-REGEX,^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget,REJECT
+//07 商城
+URL-REGEX,^https:\/\/shop-gw\.chengxinyouxuan\.com\/(route|indexConfig|apolloConfig|getShopTuanInfos),REJECT
+//08 开屏广告
+URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static,REJECT
+//09 骑行
+URL-REGEX,^https:\/\/pt-starimg\.didistatic\.com\/static,REJECT
+# > 云闪付 去广告
+URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,REJECT
 # > 美图秀秀 去广告
 DOMAIN,api.data.meitu.com,REJECT
 DOMAIN,push.meitu.com,REJECT
@@ -51,7 +75,9 @@ DOMAIN,apm.gotokeep.com,reject
 # > Keep
 Keep1=type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my,requires-body=1,script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/keepStyle.js
 Keep2=type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic,requires-body=1,script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/keepStyle.js
-
+# > 京东极速版
+京东极速版1=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising,requires-body=1,script-path=jdLiteAdvertisingVO
+京东极速版2=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush,requires-body=1,script-path=pushData
 [URL Rewrite]
 # > kEEP 去广告
 "^https?:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}" - reject
