@@ -13,7 +13,6 @@ author      kk pp
 hostname = api.coolapk.com
 
 */
-
 if ($request.url.indexOf("replyList") != -1) {
     var bodyObj = JSON.parse($response.body);
     bodyObj.data = Object.values(bodyObj.data).filter((item) => item.id);
