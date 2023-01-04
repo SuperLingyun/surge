@@ -1,0 +1,20 @@
+	#!name=高德地图去广告
+#!desc=优化高德地图页面
+
+
+[Script]
+# > 高德去广告
+高德去广1 = type=http-response,,requires-body=1,max-size=0,script-update-interval=0,pattern=^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+高德去广2 = type=http-response,,requires-body=1,max-size=0,script-update-interval=0,pattern=^https?:\/\/sns\.amap\.com\/ws\/msgbox\/pull,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+高德去广3 = type=http-response,,requires-body=1,max-size=0,script-update-interval=0,pattern=^https?:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+高德去广4 = type=http-response,,requires-body=1,max-size=0,script-update-interval=0,pattern=^https?:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+高德去广5 = type=http-response,,requires-body=1,max-size=0,script-update-interval=0,pattern=^https?:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+[URL Rewrite]
+# > 酷安去广告
+"^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk" - reject
+"^https?:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution" - reject
+"^https?:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend" - reject
+"^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/\w+\.gif" - reject-200
+
+[MITM]
+hostname =%APPEND% optimus-ads.amap.com, m5.amap.com, sns.amap.com
