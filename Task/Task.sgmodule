@@ -1,0 +1,14 @@
+#!name=定时任务
+#!desc=签到等定时任务  
+# By Evilbutcher GitHub：https://github.com/evilbutcher/Quantumult_X/tree/master zhiyou.smzdm.com,daojia.jd.com, api.m.jd.com, ms.jr.jd.com,
+
+
+
+[Script]
+B站每日任务 = type=cron,cronexp=30 7 * * *,script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/BiliBili.js,wake-system=1,timeout=15
+
+欧可林签到 =type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean_mini.js
+
+贴吧_每日签到 = type=cron,cronexp=30 0 * * *,timeout=60,script-path=https://raw.githubusercontent.com/Voldeemort/Surge/main/module/tieba/tiebacheck.js
+[MITM]
+hostname = %APPEND% tiebac.baidu.com,c.tieba.baidu.com,app.bilibili.com, m.bilibili.com
