@@ -58,5 +58,5 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ - reject
 
-[mitm]
+[MITM]
 hostname = %APPEND% api.m.jd.com,img-ys011.didistatic.com,qde.qunar.com,pt-starimg.didistatic.com,m.360buyimg.com,dns.jd.com, m.jd.com, api.jdcloud.com, jdread-api.jd.com, ms.jr.jd.com
