@@ -4,9 +4,6 @@
 
 [script]
 
-#小红书_启动处理
-redbook_json_29 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
-
 # 小红书_热搜发现
 redbook_json_31 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
 
