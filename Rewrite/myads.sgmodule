@@ -36,9 +36,8 @@ URL-REGEX,^https:\/\/qde\.qunar\.com\/preload,REJECT
 # > 滴滴出行
 https?://res\.xiaojukeji\.com\/resapi\/activity\/mget -reject
 https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) - reject
-
-# > 滴滴
 ^https?:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/.*.jpg - reject
+^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\? - reject
 
 # > 京东
 ^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/202220\/24\/21575\/134711\/625b821bE5d642d73\/77636692989bd2be\.jpg - reject
