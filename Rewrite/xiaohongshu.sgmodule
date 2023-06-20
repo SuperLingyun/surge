@@ -2,19 +2,6 @@
 #!desc=小红书净化
 
 
-[script]
-
-# 小红书_热搜发现
-redbook_json_31 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
-
-# 小红书_默认填词^_^
-redbook_json_33 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hint, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
-
-#小红书_去除购物
-redbook_json_35 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\/categories, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
-
-# 小红书_猜你想搜
-redbook_json_37 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/trending, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
 
 [URL Rewrite]
 # > 小红书_视频播放页商品推广
