@@ -6,11 +6,6 @@
 #去开屏广告
 redbook_json_25 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
 
-#小红书_短视频流去水印+强制开启保存功能
-#redbook_json_19 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/redtube\?, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout has=60, script-update-interval=0
-
-#小红书_信息流视频去水印+强制开启保存功能
-#redbook_json_21 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/videofeed\?, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
 
 #小红书_信息流图片去水印
 redbook_json_23 = type=http-response, pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/feed\?, requires-body=true, max-size=3145728, script-path=https://github.com/Scripts/raw/master/redbook_json.js, timeout=60, script-update-interval=0
