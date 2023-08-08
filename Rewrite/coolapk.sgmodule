@@ -2,7 +2,8 @@
 #!desc=优化酷安页面
 
 [Script]
-
+# > 酷安_开屏广告@ddgksf2013
+酷安_开屏广告  = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api.coolapk.com\/v6\/main\/init,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 # > 酷安_推广广告@ddgksf2013
 酷安_推广广告  = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api.coolapk.com\/v6\/dataListt,script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 # > 酷安_首页广告@ddgksf2013
